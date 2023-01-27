@@ -84,21 +84,66 @@ a {
   display: flex;
 }
 
+.button_next {
+  display: block;
+    background-image: url(img/next.svg);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 30px;
+    position: absolute;
+    bottom: 50px;
+    left: -100px;
+}
+
 .promo-text-column {
+  position: relative;
   width: 520px;
 }
 
+.promo-text-block {
+  margin: 190px 50px 0 150px;
+}
+
+.promo-title {
+  margin: 0 0 25px 0;
+}
+
 .promo-img-column {
+  position: relative;
   width: 430px;
   padding: 50px 50px;
+}
+
+.promo-img {
+  position: relative;
+  z-index: 10;
+}
+
+.diagonal_right {
+  background-image: url('img/diagonal_right.png');
+  width: 232px;
+  height: 176px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.diagonal_left {
+  background-image: url('img/diagonal_left.png');
+  width: 232px;
+  height: 176px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .promo-text {
   font-family: "Anton", "Arial", sans-serif;
   font-weight: normal;
   font-size: 128px;
-  line-height: 188px;
+  line-height: 114px;
   text-transform: uppercase;
+  margin: 0 0 50px 0;
 }
 
 .promo-header {
@@ -115,6 +160,10 @@ a {
   line-height: 19px;
   color: #ffffff;
   background-color: #151c22;
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  padding: 22px 15px;
 }
 
 .bestsellers {
@@ -152,7 +201,7 @@ a {
 
 .catalog-item-link {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   font-size: 18px;
   line-height: 21px;
   text-decoration: none;
@@ -182,18 +231,47 @@ a {
   padding-bottom: 90px;
 }
 
+.news-text {
+  display: -webkit-box;
+  max-width: 302px;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0 0 24px 0;
+}
+
 .news-wrapper {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
 
+.news-text-background {
+  background-image: url("img/diagonal.png");
+  width: 470px;
+  height: 462px;
+}
+
 .news-text-column {
   width: 400px;
-  margin-top: 30px;
-  margin-bottom: 30px;
   background-color: #f1f2f4;
+  margin: 34px 0 34px 0;
+  padding: 52px 18px;
 }
+
+.news-title {
+  margin: 0 0 27px 0;
+  display: block;
+  width: 358px;
+}
+
+.news-time {
+  margin-bottom: 13px;
+  display: block;
+  width: 110px;
+}
+
+
 
 .news-img-column {
   width: 700px;
